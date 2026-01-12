@@ -86,13 +86,26 @@ footer {
     color:red;
 }
 
-
-img{
-    width:700px;
-    height:700px;
-    text-align:center;
+/* ВИПРАВЛЕННЯ ДЛЯ КАРТИНОК ТА ВІДЕО */
+img {
+    width: 700px;
+    height: 400px; /* Змінив на 400px для прямокутної форми */
+    object-fit: cover; /* Забезпечує, що зображення заповнить область без спотворення */
+    display: block; /* Дозволяє використовувати margin для центрування */
+    margin-left: auto; /* Автоматичний відступ зліва */
+    margin-right: auto; /* Автоматичний відступ справа */
+    border: 3px solid #333; /* Додав рамку для кращого вигляду */
+    border-radius: 10px; /* Закруглені кути */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3); /* Тінь для об'ємності */
+    margin-bottom: 30px; /* Відступ знизу між картинками */
 }
-iframe{
-    text-align:center;
-}
 
+iframe {
+    display: block; /* Дозволяє центрування */
+    margin-left: auto; /* Автоматичний відступ зліва */
+    margin-right: auto; /* Автоматичний відступ справа */
+    border: 3px solid #333; /* Додав рамку */
+    border-radius: 10px; /* Закруглені кути */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3); /* Тінь */
+    margin-bottom: 30px; /* Відступ знизу */
+}
