@@ -1,144 +1,87 @@
-/* Скидання базових стилів */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    text-align:center;
+    
+}
+body{
+  font-family: sans-serif;
+  margin: 0;
+  background-image:linear-gradient(to right,red,gold );
+  
 }
 
-/* Стилі для body */
-body {
-    font-family: sans-serif;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    background-image: linear-gradient(to right, red, gold);
+nav {
+    color:white;
+    text-decoration:none;
+    display:flex;
+    gap:25px;
+    justify-content: space-evenly;
+    list-style-type: none;
 }
 
-/* ==================== HEADER СТИЛІ ==================== */
-header {
-    background: linear-gradient(135deg, #8B0000, #B22222); /* Темно-червоний градієнт */
-    color: white;
-    padding: 20px 0;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-    position: sticky;
-    top: 0;
-    z-index: 1000;
+/* ЗМІНИ ДЛЯ HEADER */
+header nav {
+    justify-content: space-between; /* змінив space-evenly на space-between */
+    padding: 20px; /* додав відступи всередині */
 }
 
-header h1 {
-    text-align: center;
-    font-size: 2.8rem;
-    margin-bottom: 20px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    letter-spacing: 2px;
-    color: #FFD700; /* Золотий колір */
+a{
+    text-decoration:none;
+    color:white;
+    border:3px solid black;
+    border-radius:35px;
+    padding:10px;
+    display:flex;
+    flex-wrap:nowrap;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.);
+    background-color:brown;
+    
+}
+.yruru {
+    width:300px;
+    height:300px;
+    padding:15px;
+    border:2px solid grey;
+    border-radius:10px;
 }
 
-/* Навігація в хедері */
-header nav ul {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    list-style: none;
-    flex-wrap: wrap;
-    padding: 0 15px;
-}
-
-header nav li {
-    margin: 5px 0;
-}
-
-/* Кнопки навігації */
-.knopka {
-    text-decoration: none;
-    color: white;
-    background-color: #A52A2A; /* Коричневий */
-    padding: 12px 25px;
-    border-radius: 35px;
-    border: 3px solid #FFD700; /* Золота рамка */
-    font-weight: bold;
-    transition: all 0.3s ease;
-    display: inline-block;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    min-width: 150px;
-    text-align: center;
-}
-
-.knopka:hover {
-    background-color: #FFD700; /* Золотий */
-    color: #8B0000; /* Темно-червоний */
-    transform: translateY(-3px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
-    border-color: white;
-}
-
-.knopka:active {
-    background-color: #FF8C00; /* Темно-помаранчевий */
-    transform: translateY(1px);
-    transition: all 0.1s ease;
-}
-
-/* ==================== MAIN СТИЛІ ==================== */
 main {
-    flex: 1; /* Займає весь доступний простір між header і footer */
-    padding: 30px 20px;
-    /* Видалено фоновий градієнт, щоб був видно фон body */
+    background-image:linear-gradient(to right,green,gold);
 }
 
-/* ==================== FOOTER СТИЛІ ==================== */
+/* ЗМІНИ ДЛЯ FOOTER */
 footer {
-    background: linear-gradient(135deg, #FFD700, #FF8C00); /* Градієнт золотий-помаранчевий */
-    color: #8B0000; /* Темно-червоний текст */
-    padding: 25px 20px;
-    box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.2);
-    margin-top: auto; /* Притискає footer до низу */
-}
-
-/* Навігація в футері */
-footer nav {
-    display: flex;
-    justify-content: center;
-    gap: 25px;
-    flex-wrap: wrap;
-    margin-bottom: 20px;
-}
-
-.uryry {
-    text-decoration: none;
-    color: #8B0000; /* Темно-червоний */
-    padding: 10px 20px;
-    border-radius: 25px;
-    background-color: rgba(255, 255, 255, 0.8);
-    border: 2px solid #8B0000;
-    font-weight: bold;
-    transition: all 0.3s ease;
-    display: inline-block;
-    min-width: 120px;
-    text-align: center;
+    background-color:gold;
+    display:flex;
+    justify-content: space-between; /* змінив space-evenly на space-between */
+    background-image:linear-gradient(to right,gold,red);
+    padding: 20px; /* додав відступи всередині */
 }
 
 .uryry:hover {
-    background-color: #228B22; /* Зелений */
-    color: white;
-    transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    border-color: #228B22;
+   background-color:green; 
+   transition:all 0.5s;
 }
-
 .uryry:active {
-    background-color: #FF8C00; /* Помаранчевий */
-    transform: translateY(1px);
-    transition: all 0.1s ease;
+    background-color:darkorange;
+    transition:all 0.4s;
+}
+.knopka:hover {
+    background-color:gold;
+    transition:all 0.5s;
+    color:black;
+}
+.knopka:active {
+    background-color:darkorange;
+    transition:all 0.4s;
+    color:black;
 }
 
-/* Текст копірайту в футері */
-footer p {
-    text-align: center;
-    font-size: 1rem;
-    color: #8B0000;
-    font-weight: bold;
-    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5);
-    padding-top: 10px;
-    border-top: 2px solid rgba(139, 0, 0, 0.3);
-    margin-top: 15px;
+.spusok {
+    text-align:left;
+}
+.goduna {
+    color:red;
+}
+.grafic {
+    color:red;
 }
