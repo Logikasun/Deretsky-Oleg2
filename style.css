@@ -109,3 +109,67 @@ iframe {
     box-shadow: 0 4px 8px rgba(0,0,0,0.3); /* Тінь */
     margin-bottom: 30px; /* Відступ знизу */
 }
+
+
+
+
+/* СТИЛІ ДЛЯ HEADER */
+header {
+    background: linear-gradient(to right, red, gold);
+    padding: 15px 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header h1 {
+    color: white;
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin: 0;
+    letter-spacing: 1px;
+}
+
+/* Навігація в хедері */
+header nav ul {
+    display: flex;
+    gap: 15px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Кнопки навігації */
+.knopka {
+    text-decoration: none;
+    color: white;
+    background-color: brown;
+    padding: 10px 20px;
+    border-radius: 35px;
+    border: 3px solid black;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    display: inline-block;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    min-width: 120px;
+}
+
+.knopka:hover {
+    background-color: gold;
+    color: black;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.knopka:active {
+    background-color: darkorange;
+    transform: translateY(1px);
+    transition: all 0.1s ease;
+}
